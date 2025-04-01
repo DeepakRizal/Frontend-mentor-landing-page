@@ -314,6 +314,23 @@ footer {
   list-style-type: none;
 }
 
+/* dot slider  */
+.buttons {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 100%;
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   .main-header {
     background-image: url("./images/mobile/image-header.jpg");
