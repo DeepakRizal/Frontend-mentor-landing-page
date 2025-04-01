@@ -152,7 +152,94 @@
   display: none;
 }
 
-@media (max-width: 400px) {
+/* slide container section  */
+.slide-container-section {
+  position: relative;
+  padding: 100px;
+}
+
+.slide-container-section h2 {
+  color: #808080;
+}
+
+.slides address {
+  color: #445248;
+}
+
+.slides p {
+  color: #323232;
+}
+
+.slides address p {
+  color: #8b7575;
+}
+
+.slide-container-section h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.arrow {
+  position: absolute;
+  width: 80px;
+  cursor: pointer;
+}
+
+.right {
+  right: 15%;
+  top: 50%;
+}
+.left {
+  left: 15%;
+  top: 50%;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50rem;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides-container {
+  display: flex;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+}
+
+.slides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 60px 0px 60px 0px;
+  min-width: 100%;
+  height: 100%;
+}
+.slides img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+
+/* gallery section  */
+.gallery_section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery_section img {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .main-header {
+    background-image: url("./images/mobile/image-header.jpg");
+  }
+
   .nav-links,
   .logo-text {
     display: none;
@@ -232,10 +319,56 @@
     max-width: 70%;
     text-align: center;
   }
+
+  /* slider section  */
+  .slide-container-section {
+    padding: 50px;
+  }
+
+  .arrow {
+    width: 50px;
+  }
+
+  .right {
+    right: 5%;
+  }
+  .left {
+    left: 5%;
+  }
 }
 
-@media (max-width: 600px) {
-  .main-header {
-    background-image: url("./images/mobile/image-header.jpg");
+@media (min-width: 600px) and (max-width: 900px) {
+  .text-box h2 {
+    color: #191919;
+    font-size: 1rem;
+  }
+
+  .text-box p {
+    color: #878787;
+    font-size: 12px;
+  }
+  .text-box a {
+    color: #5e5e5e;
+    text-decoration: none;
+    font-size: 10px;
+  }
+
+  .image-box-desktop .image-box .image-text h3 {
+    font-size: 16px;
+  }
+
+  .image-box-desktop .image-box .image-text p {
+    font-size: 12px;
+  }
+
+  .image-box-desktop .image-box .image-text {
+    position: absolute;
+    top: 55%;
+  }
+  .right {
+    right: 5%;
+  }
+  .left {
+    left: 5%;
   }
 }
