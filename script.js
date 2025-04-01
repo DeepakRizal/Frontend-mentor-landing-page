@@ -2,6 +2,8 @@ const slidesContainer = document.querySelector(".slides-container");
 const slides = document.querySelectorAll(".slides");
 const left = document.querySelector(".left");
 const right = document.querySelector(".right");
+const mobileNavigation = document.querySelector(".mobile-navigation");
+const mobileNavgationButton = document.querySelector(".mobile-navigation-icon");
 
 let slideNumber = 1;
 
@@ -25,4 +27,8 @@ left.addEventListener("click", () => {
     slidesContainer.style.transform = `translateX(-200%)`;
     slideNumber = 3;
   }
+});
+
+mobileNavgationButton.addEventListener("click", () => {
+  mobileNavigation.classList.toggle("none");
 });
